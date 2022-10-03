@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.green.board.dao.memberMapper">
+
+    <select id="select" parameterType="int" resultType="MemberDto">
+        select id, pwd, name, nickname, email, tel, mobile, address
+        from member
+        where id = #{id}
+    </select>
+
+    <select id="selectAll" resultType="MemberDto">
+        SELECT id, pwd, name, nickname, email, tel, mobile, address
+        FROM member
+    </select>
+
+    <select id="count" resultType="int">
+        SELECT count(*) FROM member
+    </select>
+
+    <insert id="insertAll" parameterType="MemberDto">
+        <!--시퀀스 바로 입력하기 -->
+        INSERT INTO member
+        VALUES(#{id}, #{pwd}, #{name}, #{nickname}, #{email}, #{tel}, #{mobile}, #{address})
+    </insert>
+    
+    <insert id="insert" parameterType="MemberDto">
+        <!--시퀀스 바로 입력하기 -->
+        INSERT INTO member(id, pwd, name, nickname, email, mobile, address)
+        VALUES(#{id}, #{pwd}, #{name}, #{nickname}, #{email}, #{mobile}, #{address})
+    </insert>
+
+    <update id="update" parameterType="MemberDto">
+        UPDATE board
+        SET   nickname = #{nickname}
+          , tel = #{tel}
+          , mobile = #{mobile}
+        WHERE id = #{id}
+    </update>
+    
+    <!-- <update id="increaseViewCnt" parameterType="int">
+        UPDATE board
+        SET   view_cnt = view_cnt + 1
+        WHERE bno = #{bno}
+    </update>
+
+    삭제할때는 게시물번호랑 작성자가 일치할때만 가능하도록
+    <delete id="delete" parameterType="map">
+        DELETE FROM board WHERE bno = #{bno} and writer = #{writer}
+    </delete>
+
+    만약 관리자가 삭제할 수 있도록 설정하고 싶으면 하나 더 만들면 됨
+     관리자 권한 확인해서 게시글 삭제할 수 있게 설정
+    <delete id="deleteForAdmin">
+        DELETE FROM board WHERE bno = #{bno}
+    </delete>
+
+
+    <delete id="deleteAll">
+        DELETE FROM board
+    </delete> -->
+
+</mapper>

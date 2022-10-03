@@ -1,0 +1,286 @@
+/* joinCheck */ 
+section .regSize {
+	padding: 80px 0;
+	margin-bottom: 160px;
+}
+.regSize .register {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+@media screen and (max-width: 1240px) {
+	.regSize .register {
+		width: 100%;
+		padding: 0 20px;
+	}
+}
+.fregister>p {
+	background-color: #f2838f;
+	color: #fff;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.fregister .check{
+	margin: 10px auto 15px;
+	border: 1px solid #dde7e9;
+	border-radius: 3px;
+	position: relative;
+}
+.check h2 {
+	text-align: left;
+	padding: 20px;
+	border-bottom: 1px solid #dde7e9;
+	font-size: 1.2em;
+}
+.check textarea {
+	display: block;
+	padding: 20px;
+	width: 100%;
+	height: 150px;
+	background: #fff;
+	border: 0;
+	line-height: 1.6em;
+}
+.check .checkBox {
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	width: 17px;
+	height: 17px;
+}
+.check>div {
+	padding: 20px;
+	background: #fff;
+}
+.check table, tr, td {
+	border: 1px solid #dde7e9;
+}
+.check table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.check thead {
+	text-align: center;
+}
+.check table th {
+	background: #f7f7f9;
+	width: 33.33%;
+	color: #000;
+	padding: 10px;
+	border: 1px solid #d8dbdf;
+}
+.check table td {
+	border: 1px solid #e7e9ec;
+	padding: 10px;
+	border-top: 0;
+}
+.reg-checkAll {
+	position: relative;
+	text-align: center;
+	background: #f5f7fa;
+	line-height: 50px;
+	border: 1px solid #e5e9f0;
+	border-radius: 3px;
+	margin-bottom: 15px;
+}
+.reg-checkAll .checkBox {
+	position: absolute;
+	top: 18px;
+	right: 15px;
+	width: 17px;
+	height: 17px;
+}
+.btn-confirm {
+	text-align: left;
+}
+.btn-confirm .btn-close, .btn-submit {
+	float: left;
+	height: 50px !important;
+	width: 49.5%;
+	font-weight: bold;
+	font-size: 1.084em;
+}
+.btn-confirm .btn-submit {
+	margin-left: 1%;	
+}
+.btn-submit {
+	border: 0;
+	background: #3a8afd;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+}
+a.btn-close {
+	text-align: center;
+	line-height: 50px;
+}
+.btn-close {
+	border: 1px solid #dcdcdc;
+	cursor: pointer;
+	border-radius: 3px;
+	background: #fff;
+}
+/* joinInfo */
+section .conRegInfoSize {
+	padding: 120px 0;
+}
+@media screen and (max-width: 768px) {
+	section .conRegInfoSize {
+		padding: 80px 0;
+	}
+}
+.conRegInfoSize .regInfoSize {
+		width: 1300px;
+		margin: 0 auto; 
+		margin-bottom: 100px;
+	}
+@media screen and (max-width: 1240px) {
+	.conRegInfoSize .regInfoSize {
+		width: 100%;
+		padding: 0 20px; 
+	}
+}
+.regInfoSize .register {
+	margin: 0 auto;
+}
+.regPer input {
+	width: 100%;
+	height: 40px;
+}
+.regPer h2 {
+	padding: 20px;
+	border-bottom: 1px solid #dde7e9;
+	font-size: 1.167em;
+}
+.regPer ul {
+	padding: 20px;
+}
+.regPer .fa {
+	margin-left: 5px;
+	color: #b3b5b8;
+	cursor: pointer;
+}
+.regPer ul li {
+	margin-bottom: 10px;
+}
+.regInfoSize .register .siteInfoInput {
+	background: #f7f7f7;
+	border: 1px solid #dde7e9;
+	border-radius: 3px;
+	margin: 0 0 20px;
+}
+.siteInfoInput ul {
+	overflow: auto;
+}
+.siteInfoInput ul .liSize {
+	float: left;
+	margin-bottom: 10px;
+	width: 49.5%;
+}
+.siteInfoInput ul .secLi {
+	margin-right: 1%;
+}
+
+.siteInfoInput ul li label {
+	display: block;
+	margin-bottom: 10px;
+	line-height: 24px;
+	font-size: 1em;
+}
+section .perInfoInput {
+	margin: 0 0 20px;
+	background: #f7f7f7;
+	border: 1px solid #dde7e9;
+	border-radius: 3px;
+}
+.perInfoInput label {
+	display: block;
+	margin-bottom: 10px;
+	line-height: 24px;
+	font-size: 1em;
+}
+.perInfoInput .infoName {
+	width: 30%;
+}
+.perInfoInput .mobileCheck {
+		display: inline-block;
+		width: 128px;
+		padding: 0 5px;
+		height: 34px;
+		border: 0; 
+		background: #434a54;
+		border-radius: 3px;
+		color: #fff;
+		text-decoration: none;
+		vertical-align: top;
+		cursor: pointer;
+		font-size: 1em;
+}
+.perInfoInput .searAddr {
+		display: inline-block;
+		width: 128px;
+		padding: 0 5px;
+		height: 34px;
+		border: 0; 
+		background: #434a54;
+		border-radius: 3px;
+		color: #fff;
+		text-decoration: none;
+		vertical-align: top;
+		cursor: pointer;
+		font-size: 1em;
+}
+.perInfoInput .infoNick {
+	margin-bottom: 20px;
+}
+.perInfoInput .postNum {
+	width: 30%;
+	margin-right: 10px;
+}
+.perInfoInput ul li:last-child input{
+	margin-bottom: 5px;
+}
+.etcSet {
+	margin: 0 0 20px;
+	background: #f7f7f7;
+	border: 1px solid #dde7e9;
+	border-radius: 3px;
+}
+.etcSet ul li {
+	margin-bottom: 15px;
+}
+.etcSet ul li:first-child {
+	height: 38px;
+}
+.etcSet ul li:first-child label{
+	float: left;
+	display: inline-block;
+	width: 130px;
+	margin-bottom: 10px;
+	line-height: 24px;
+}
+.etcSet ul li:first-child input[type="file"] {
+	float: left;
+	margin: 0;
+	width: 268px;
+	height: 21px;
+}
+.etcSet input[type="checkbox"] {
+	float: left;
+	width: 15px;
+	height: 15px;
+	display: block;	
+}
+.etcSet input[type="checkbox"]:checked {
+	float: left;
+	width: 15px;
+	height: 15px;
+	display: block;
+}
+.etcSet span {
+	padding-left: 20px;
+}
