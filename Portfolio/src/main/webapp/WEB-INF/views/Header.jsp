@@ -1,6 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<c:set var="loginOut" value="${sessionScope.id==null ? '로그인' : '로그아웃'}"/>
+<c:set var="loginOutLink" value="${sessionScope.id==null ? 'login/login' : 'login/logout' }"/>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +27,7 @@
 	        </ul>
 	
 	        <div class="join">
-	            <a href="login" class="signIn">로그인</a>
+	            <a href="${loginOutLink}" class="signIn">${loginOut}</a>
 	            <a href="joinCon" class="signUp">회원가입</a>
 	        </div>
 	        
@@ -74,7 +78,6 @@
    		</ul>
     </div>
     
-    <script src="<c:url value='${path}/resources/script.js'/>"></script>
 	<script>
 		$.noConflict();
 

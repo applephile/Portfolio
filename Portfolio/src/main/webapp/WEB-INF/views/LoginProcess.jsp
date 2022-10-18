@@ -23,8 +23,6 @@ request.setCharacterEncoding("utf-8");
 	MemberDTO memberDto = new MemberDTO();
 	
 	if(result == 1) {
-		
-		
 		PrintWriter script = response.getWriter();
 		session.setAttribute("id", memberDto.getId());
 		session.setAttribute("name", memberDto.getName());

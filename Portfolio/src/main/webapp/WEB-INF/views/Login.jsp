@@ -10,8 +10,8 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-<link rel="stylesheet" href="./resources/css/style.css">
-<link rel="stylesheet" href="./resources/css/login.css">
+<link rel="stylesheet" href="../resources/css/style.css">
+<link rel="stylesheet" href="../resources/css/login.css">
 
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -37,13 +37,13 @@
 				<span>로그인</span>
 				<p>Ulsan Football Association</p>
 			</h2>
-		</div>
+		</div>	
 
 		<div class="login-section">
 			<div class="login-wrap">
 				<div class="login-btn-title">
 					<h2>로그인</h2>
-					<a href="#" class="join">회원가입</a>
+					<a href="joinCon" class="join">회원가입</a>
 				</div>
 	
 				<form action="loginCon" method="post" class="login-form">
