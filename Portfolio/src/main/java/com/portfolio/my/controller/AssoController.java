@@ -24,4 +24,9 @@ public class AssoController {
 	public String president() {
 		return "PresidentAsso";
 	}
+	
+	@GetMapping("/orga")
+	public String organization() {
+		return "Organization";
+	}
 }

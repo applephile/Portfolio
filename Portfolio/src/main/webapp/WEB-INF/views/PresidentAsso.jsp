@@ -42,7 +42,7 @@
 				<div class="assoNav">
 					<ul>
 						<li><a href="<c:url value='/asso/pres'/>">협회장 인사말</a></li>
-						<li><a href="#">조직</a></li>
+						<li><a href="<c:url value='/asso/orga'/>">조직</a></li>
 						<li><a href="#">협회자료</a></li>
 						<li><a href="#">찾아오시는 길</a></li>
 					</ul>
@@ -51,14 +51,14 @@
 		</div>	
 		
 		<div class="presIntro">
-			<div class="presTitle">
+			<div class="pageTitle">
 				<span>Greeting from the President of the Association</span>
 				<h2>협회장 인사말</h2>
 			</div>
 			
-			<div class="greet-line">
+			<!-- <div class="greet-line">
 				<p></p>
-			</div>
+			</div> -->
 			<div class="greeting">
 				<p></p>
 				<div class="title">
@@ -98,6 +98,8 @@
 			if(pageUrl.indexOf('/asso/pres') > -1) {
 				$('.assoNav ul li').eq(0).addClass('active');
 				/* $('.assoNav ul li').addClass('active'); */
+			} else if(pageUrl.indexOf('/asso/orga') > -1) {
+				$('assoNav ul li').eq(1).addClass('active');
 			}
 		});
 	</script>
