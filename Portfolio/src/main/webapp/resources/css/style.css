@@ -297,8 +297,8 @@ section .topBanner {
 .assoNav ul li::before {
 	position: absolute;
 	top: 30px;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	height: 15px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	height: 10px;
 	content: "";	
 }
 .assoNav ul li:first-child::before {
