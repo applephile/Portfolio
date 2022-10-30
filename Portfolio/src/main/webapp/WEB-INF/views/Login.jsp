@@ -14,7 +14,6 @@
 <link rel="stylesheet" href="../resources/css/login.css">
 
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -26,7 +25,7 @@
 	
 	<div class="scroll-top">
 		<a class="top-btn">
-			<img src="./resources/img/icon/quick-02.png">
+			<img src="../resources/img/icon/quick-02.png">
 		</a>
 	</div>
 
@@ -34,8 +33,8 @@
 
 		<div class="topBanner">
 			<h2>
-				<span>로그인</span>
-				<p>Ulsan Football Association</p>
+				<span data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">로그인</span>
+				<p data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">Ulsan Football Association</p>
 			</h2>
 		</div>	
 
@@ -43,15 +42,15 @@
 			<div class="login-wrap">
 				<div class="login-btn-title">
 					<h2>로그인</h2>
-					<a href="joinCon" class="join">회원가입</a>
+					<a href="<c:url value='/join/joinCon'/>" class="join">회원가입</a>
 				</div>
 	
-				<form action="loginCon" method="post" class="login-form">
+				<form action="<c:url value='/login/loginCon'/>" method="post" class="login-form">
 					<input type="text" placeholder="아이디" class="login-info" value="${cookie.id.value}" name="id">
 					<input type="password" placeholder="비밀번호" class="login-info" value="${cookie.pwd.value}" name="pwd"> <br>
 					<button type="submit">로그인</button>
 					<div class="login-bottom">
-						<label class="auto-login"><input type="checkbox" name="rememberId" ${empty cookie.id.value ? "" : "checked"}>&nbsp;자동 로그인</label>
+						<label class="auto-login"><input type="checkbox" name="rememberId" ${empty cookie.id.value ? "" : "checked"}>&nbsp;아이디 저장</label>
 						<a href="#" class="find-info">정보 찾기</a>
 					</div>
 				</form>

@@ -3,7 +3,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <c:set var="loginOut" value="${sessionScope.id==null ? '로그인' : '로그아웃'}"/>
-<c:set var="loginOutLink" value="${sessionScope.id==null ? 'login/login' : 'login/logout' }"/>
+<c:set var="loginOutLink" value="${sessionScope.id==null ? '/login/login' : 'login/logout' }"/>
+<c:set var="joinCorr" value="${sessionScope.id==null ? '회원가입' : '정보수정'}"/>
+<c:set var="joinCorrLink" value="${sessionScope.id==null ? '/join/joinCon' : '#' }"/>
 
 <!DOCTYPE html>
 <html>
@@ -17,18 +19,18 @@
 <body>
 	<header id="header">
 		<div class="header-wrap">
-	        <a href="main" class="logo" title="울산축구협회"></a>
+	        <a href="<c:url value='/'/>" class="logo" title="울산축구협회"></a>
 	
 	        <ul class="gnb">
-	            <li><h2><a href="#">협회소개</a></h2></li>
+	            <li><h2><a href="<c:url value='/asso/pres'/>">협회소개</a></h2></li>
 	            <li><h2><a href="#">대회</a></h2></li>
 	            <li><h2><a href="#">교육</a></h2></li>
 	            <li><h2><a href="#">커뮤니티</a></h2></li>
 	        </ul>
 	
 	        <div class="join">
-	            <a href="${loginOutLink}" class="signIn">${loginOut}</a>
-	            <a href="joinCon" class="signUp">회원가입</a>
+	            <a href="<c:url value='${loginOutLink}'/>" class="signIn">${loginOut}</a>
+	            <a href="<c:url value='${joinCorrLink}'/>" class="signUp">${joinCorr}</a>
 	        </div>
 	        
 	        <div class="side-btn">

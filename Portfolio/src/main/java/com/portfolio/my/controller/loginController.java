@@ -38,18 +38,18 @@ public class loginController {
 		System.out.println("pwd = " + pwd);
 		System.out.println("rememberId = " + rememberId);
 		
-		MemberDAO memberDao = new MemberDAOImpl();
+		MemberDAOImpl memberDao = new MemberDAOImpl();
 		Boolean result = memberDao.loginCheckBool(id, pwd);
 		
 		if(!result) {
 			try {
-				PrintWriter script = response.getWriter();
-				script.println("<script>");
-				script.println("alert('가입된 회원아이디가 아니거나 비밀번호가 틀립니다.\n"
-								+ "	비밀번호는 대소문자를 구분합니다.')");
-				script.println("</script>");
-				return "redirect:/";
-			} catch (IOException e) {
+//				PrintWriter script = response.getWriter();
+//				script.println("<script>");
+//				script.println("alert('비밀번호가 틀렸습니다.')");
+//				script.println("history.back()");
+//				script.println("</script>");
+				return "LoginProcess";
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 			
@@ -67,6 +67,6 @@ public class loginController {
 			response.addCookie(cookie);
 		}
 		
-		return "redirect:/main";
+		return "redirect:/";
 	}
 }

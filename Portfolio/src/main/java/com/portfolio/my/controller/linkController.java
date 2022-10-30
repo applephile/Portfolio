@@ -11,8 +11,8 @@ public class linkController {
 		return "Main";
 	}
 
-	@GetMapping("/login")
-	public String login() {
-		return "Login";
-	}
+//	@GetMapping("/login")
+//	public String login() {
+//		return "Login";
+//	}
 }

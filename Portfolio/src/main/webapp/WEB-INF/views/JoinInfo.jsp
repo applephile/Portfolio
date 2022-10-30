@@ -10,11 +10,10 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-<link rel="stylesheet" href="./resources/css/style.css">
-<link rel="stylesheet" href="./resources/css/join.css">
+<link rel="stylesheet" href="../resources/css/style.css">
+<link rel="stylesheet" href="../resources/css/join.css">
 
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -28,15 +27,15 @@
 	
 	<div class="scroll-top">
 		<a class="top-btn">
-			<img src="./resources/img/icon/quick-02.png">
+			<img src="../resources/img/icon/quick-02.png">
 		</a>
 	</div>
 
 	<section>
 		<div class="topBanner">
 			<h2>
-				<span>회원가입</span>
-				<p>Ulsan Football Association</p>
+				<span data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">회원가입</span>
+				<p data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">Ulsan Football Association</p>
 			</h2>
 		</div>
 		
@@ -169,7 +168,7 @@
 			}, 800);
 		})
 	</script>
-	<script src="./resources/js/searchAddress.js"></script>
-	<script src="./resources/js/join.js"></script>
+	<script src="../resources/js/searchAddress.js"></script>
+	<script src="../resources/js/join.js"></script>
 </body>
 </html>

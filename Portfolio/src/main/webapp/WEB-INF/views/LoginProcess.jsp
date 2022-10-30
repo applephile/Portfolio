@@ -15,26 +15,26 @@ request.setCharacterEncoding("utf-8");
 	
 	String id = request.getParameter("id");
 	String pwd = request.getParameter("pwd");
-	String rememberId = request.getParameter("rememberId");
 	
 	MemberDAOImpl memberDaoImpl = new MemberDAOImpl();
 	
 	int result = memberDaoImpl.loginCheck(id, pwd);
-	MemberDTO memberDto = new MemberDTO();
 	
-	if(result == 1) {
+	//MemberDTO memberDto = new MemberDTO();
+	
+	/* if(result == 1) {
 		PrintWriter script = response.getWriter();
 		session.setAttribute("id", memberDto.getId());
 		session.setAttribute("name", memberDto.getName());
 		script.println("<script>");
 		script.println("location.href='main'");
 		script.println("</script>");
-	}
+	} */
 	
 	if(result == 0) {
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
-		script.println("alert('비밀번호가 틀렸습니다.')");
+		script.println("alert('가입된 회원아이디가 아니거나 비밀번호가 틀립니다.\\n비밀번호는 대소문자를 구분합니다.')");
 		script.println("history.back()");
 		script.println("</script>");
 	}
@@ -42,7 +42,7 @@ request.setCharacterEncoding("utf-8");
 	if(result == -1) {
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
-		script.println("alert('존재하지 않는 아이디입니다.')");
+		script.println("alert('가입된 회원아이디가 아니거나 비밀번호가 틀립니다.\\n비밀번호는 대소문자를 구분합니다.')");
 		script.println("history.back()");
 		script.println("</script>");
 	}
