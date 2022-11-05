@@ -323,6 +323,41 @@
 						심판위원회<br>
 						대외협력위원회	
 					</div>
+					
+					<ul>
+						<li class="team1 team">
+							<p>동호인축구팀</p>
+							<div>
+								동호인축구 관련업무 / 구・군협회 협력<br><br>
+								총회, 이사회 및 규정개정 등<br><br>
+								신규사업 발굴 및 후원사 관리
+							</div>
+						</li>
+						<li class="team2 team">
+							<p>전문축구팀</p>
+							<div>
+								전문축구관련업무 / 축구발전지원금 업무<br><br>
+								울산광역시축구협회 예,정산 관련 회계업무<br><br>
+								심판,지도자,보수교육 등 교육업
+							</div>
+						</li>
+						<li class="team3 team">
+							<p>울산시민축구단</p>
+							<div>
+								 구단운영지원 업무<br><br>
+								 홍보,마케팅 업무
+							</div>
+						</li>
+					</ul>
+					
+					<div class="orga-tel">
+						<p>
+							<b>Tel. 052)277-2074</b> ①번 전문축구 관련문의, ②번 동호인축구 관련문의, ③번 심판 및 교육 관련문의, ④번 울산시민축구단 관련문의, ⑤번 기타문의
+						</p>
+						<p>
+							<b>Fax. 052)277-2054</b>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -349,8 +384,10 @@
 			if(aValue.indexOf('content1') > -1) {
 				$(this).addClass('active');
 				$('.officer').css("display", "block");
+				$('.department').css("display", "none");
 			} else if(aValue.indexOf('content2') > -1) {
 				$(this).addClass('active');
+				$('.department').css("display", "block");
 				$('.officer').css("display", "none");
 			} else if(aValue.indexOf('content3') > -1) {
 				$(this).addClass('active');
