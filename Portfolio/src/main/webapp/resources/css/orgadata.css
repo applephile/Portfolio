@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dataIntro {
+	min-width: 1280px;
+	padding: 100px;
+}
+.data-nav {
+	margin-bottom: 80px;
+}
+.data-nav ul {
+	display: flex;
+	justify-content: center;
+}
+.data-nav ul li {
+	width: 426px;
+	height: 60px;
+	line-height: 60px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.data-nav ul li a {
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	font-size: 20px;
+}
+.data-nav ul li a.active {
+	color: #fff;
+	background-color: #0f3876;
+}
+.charter {
+	padding: 50px;
+	border-top: 3px solid #0f3876;
+	width: 1280px;
+	height: 700px;
+	margin: 0 auto;
+	position: relative; 
+	margin-bottom: 120px;
+}
+.charter h3 {
+	position: absolute;
+	top: 50px;
+	left: 120px;
+	font-size: 30px;
+	font-weight: bold;
+}
+.charter .charter-list {
+	padding-left: 350px;
+}
+.charter-list dt {
+	clear: both;
+	float: left;
+	width: 50px;
+	font-size: 25px;
+	color: #222;
+	text-align: center;
+	padding-right: 10px;
+}
+.charter-list dd {
+	float: left;
+	font-size: 24px;
+	color: #222;
+	letter-spacing: -1px;
+	padding-bottom: 20px;
+}
+.charter-list dd span {
+	display: block;
+	font-size: 14px;
+	color: #999;
+	font-weight: 600;
+	letter-spacing: 1px;
+}

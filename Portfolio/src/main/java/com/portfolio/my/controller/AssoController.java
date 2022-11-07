@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.apache.catalina.connector.Response;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -29,4 +30,10 @@ public class AssoController {
 	public String organization() {
 		return "Organization";
 	}
+	
+	@GetMapping("/data")
+	public String orgadata() {
+		return "OrgaData";
+	}
+	
 }

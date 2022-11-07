@@ -11,7 +11,7 @@
     box-sizing: border-box;
    	font-family: 'Pretendard-Regular';
 }
-ul, ol {
+ul, ol, dl, dt, dd {
     list-style: none;
 }
 th, td {

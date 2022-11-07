@@ -43,7 +43,7 @@
 					<ul>
 						<li><a href="<c:url value='/asso/pres'/>">협회장 인사말</a></li>
 						<li><a href="<c:url value='/asso/orga'/>">조직</a></li>
-						<li><a href="#">협회자료</a></li>
+						<li><a href="<c:url value='/asso/data'/>">협회자료</a></li>
 						<li><a href="#">찾아오시는 길</a></li>
 					</ul>
 				</div>
@@ -360,6 +360,59 @@
 					</div>
 				</div>
 			</div>
+		
+			<div class="gugun-union">
+				<div class="union-title">
+					<h2>구.군협회 및 연맹</h2>
+				</div>
+				
+				<div class="gugun-chairman">
+					<ul>
+						<li>
+							<h3>울산동구축구협회</h3>
+							<p>
+								회장:고원춘 <br>
+								사무국장:최용
+							</p>
+						</li>
+						<li>
+							<h3>울산북구축구협회</h3>
+							<p>
+								회장:김정환 <br>
+								사무국장:홍현성
+							</p>
+						</li>
+						<li>
+							<h3>울산중구축구협회</h3>
+							<p>
+								회장:석준국 <br>
+								사무국장:정연호
+							</p>
+						</li>
+						<li>
+							<h3>울산남구축구협회</h3>
+							<p>
+								회장:권성호 <br>
+								사무국장:신영철
+							</p>
+						</li>
+						<li>
+							<h3>울산울주군축구협회</h3>
+							<p>
+								회장:박의남 <br>
+								사무국장:김성환
+							</p>
+						</li>
+						<li>
+							<h3>울산풋살연맹</h3>
+							<p>
+								회장:차현도 <br>
+								사무국장:김태성
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</section>
 	
@@ -373,6 +426,8 @@
 				/* $('.assoNav ul li').addClass('active'); */
 			} else if(pageUrl.indexOf('/asso/orga') > -1) {
 				$('.assoNav ul li').eq(1).addClass('active');
+			} else if(pageUrl.indexOf('/asso/data') > -1) {
+				$('.assoNav ul li').eq(2).addClass('active');
 			}
 		});
 		
@@ -385,13 +440,17 @@
 				$(this).addClass('active');
 				$('.officer').css("display", "block");
 				$('.department').css("display", "none");
+				$('.gugun-union').css("display", "none");
 			} else if(aValue.indexOf('content2') > -1) {
 				$(this).addClass('active');
 				$('.department').css("display", "block");
 				$('.officer').css("display", "none");
+				$('.gugun-union').css("display", "none");
 			} else if(aValue.indexOf('content3') > -1) {
 				$(this).addClass('active');
+				$('.gugun-union').css("display", "block");
 				$('.officer').css("display", "none");
+				$('.department').css("display", "none");
 			}
 			
  		})

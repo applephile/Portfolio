@@ -5,15 +5,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>협회장 소개</title>
+<title>협회자료</title>
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 <link rel="stylesheet" href="../resources/css/style.css">
-<link rel="stylesheet" href="<c:url value='../resources/css/assoPres.css'/>">
-<!-- <link rel="stylesheet" href="../resources/css/login.css"> -->
+<link rel="stylesheet" href="../resources/css/orgadata.css">
 
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -50,42 +49,77 @@
 			</div>
 		</div>	
 		
-		<div class="presIntro">
+		<div class="dataIntro">
 			<div class="pageTitle">
-				<span>Greeting from the President of the Association</span>
-				<h2>협회장 인사말</h2>
+				<span>Association data</span>
+				<h2>협회자료</h2>
 			</div>
 			
-			<!-- <div class="greet-line">
-				<p></p>
-			</div> -->
-			<div class="greeting">
-				<p></p>
-				<div class="title">
-					<span>반갑습니다.</span>
-					<span>축구를 사랑하는 축구가족 여러분!</span>
-				</div>
-				
-				<div class="body-text">
-					사단법인 울산광역시축구협회에서는 건전한 축구문화의 보급과 우수선수 육성을 통하여 축구저변을 확대하고 시민들과 같이 호흡하며 지역축구발전에 기여해 나아가고 있습니다.
-					<br><br>
-					축구는 이제 단순한 스포츠의 의미를 넘어서 다양한 분야의 산업으로까지 발전하고 있으며 국민들의 여가선용, 건강증진을 책임지는 국민스포츠로 발돋움하였습니다.
-					<br><br>
-					이제 울산에서도 유아에서부터 성인에 이르기까지 어디에서도 축구할 수 있는 기반을 마련하였으며 유관기관과의 협력을 통하여 축구메카도시 울산의 위상을 더욱 강화해 나가도록 노력하겠습니다.
-					<br><br>
-					언제나 우리곁에 있는 친근하고 편안한 협회가 될 수 있도록 홈페이지를 통해 더욱 소통하고 발전하여 나가도록 하겠습니다.
-					<br><br>
-					감사합니다.
-				</div>
-				
-				<div class="pres-name">
-					<span>사단법인 울산광역시축구협회장</span>
-					<span class="name">정태석</span>
-				</div>
+			<div class="data-nav">
+				<ul>
+					<li><a id="content1" class="active">축구인 헌장</a></li>
+					<li><a id="content2">정관/규정</a></li>
+					<li><a id="content3">계획/결산</a></li>
+				</ul>
 			</div>
 			
-			<div class="presPhoto">
-				<img src="../resources/img/person/president_img.jpeg">
+			<div class="charter">
+				<h3>축구인 헌장</h3>
+				
+				<div class="charter-list">
+					<dl>
+						<dt>1.</dt>
+						<dd>
+							승리를 위하여 최선을 다한다.
+							<span>Make every effort to play good football.</span>
+						</dd>
+						<dt>2.</dt>
+						<dd>
+							정정당당하게 경기한다.
+							<span>Play fair.</span>
+						</dd>
+						<dt>3.</dt>
+						<dd>
+							경기규칙을 준수한다.
+							<span>Observe the Laws of the Games.</span>
+						</dd>
+						<dt>4.</dt>
+						<dd>
+							상대와 동료 선수, 심판과 임원, 관중을 존중한다. 
+							<span>Respect opponents, teammates, referees, officials and spectators .</span>
+						</dd>
+						<dt>5.</dt>
+						<dd>
+							패배를 당당하게 인정한다.
+							<span>Accept defeat with dignity.</span>
+						</dd>
+						<dt>6.</dt>
+						<dd>
+							축구의 발전과 권익을 위해 노력한다.
+							<span>Promote the interests of football.</span>
+						</dd>
+						<dt>7.</dt>
+						<dd>
+							축구에 해가 되는 부정과 부패, 차별과 폭력을 배격한다.
+							<span>Reject corruption, discrimination, violence, and other dangers to out Game.</span>
+						</dd>
+						<dt>8.</dt>
+						<dd>
+							축구 관련 분쟁은 축구협회와 국제축구연맹을 통하여 해결하고, 그 결정을 존중한다.
+							<span>Resolve all disputes through FIFA & KFA and respect the decisions.</span>
+						</dd>
+						<dt>9.</dt>
+						<dd>
+							우리는 축구 가족이다. 서로 돕고 산다.
+							<span>Help each other as a football family.</span>
+						</dd>
+						<dt>10.</dt>
+						<dd>
+							축구의 명예를 위해 헌신한 이들을 드높인다.
+							<span>Honor those who work hard to defend football's good reputation.</span>
+						</dd>
+					</dl>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -97,14 +131,27 @@
 			
 			if(pageUrl.indexOf('/asso/pres') > -1) {
 				$('.assoNav ul li').eq(0).addClass('active');
-				/* $('.assoNav ul li').addClass('active'); */
 			} else if(pageUrl.indexOf('/asso/orga') > -1) {
-				$('assoNav ul li').eq(1).addClass('active');
+				$('.assoNav ul li').eq(1).addClass('active');
 			} else if(pageUrl.indexOf('/asso/data') > -1) {
 				$('.assoNav ul li').eq(2).addClass('active');
 			}
 		});
-	</script>
+		
+		$('.data-nav ul li a').click(function() {
+			let aValue = $(this).attr("id");
+			
+			$('.data-nav ul li a').removeClass('active');
+			
+			if(aValue.indexOf("content1") > -1) {
+				$(this).addClass('active');
+			} else if(aValue.indexOf("content2") > -1) {
+				$(this).addClass('active');
+			} else if(aValue.indexOf("content3") > -1) {
+				$(this).addClass('active');
+			}
+		})
+	</script> 
 	
 	<script>
 		
@@ -116,15 +163,9 @@
 			let scrollTop = $(window).scrollTop();
 		
 			if(scrollTop == 0) {
-				//$('.header-wrap').removeClass('on');
 				$('.scroll-top').removeClass('on');
-				//$('.header-wrap').mouseover(function() {$(this).addClass('on');})
-				//$('.header-wrap').mouseout(function() {$(this).removeClass('on');})
 			} else {
 				$('.scroll-top').addClass('on');
-				//$('.header-wrap').addClass('on');
-				//$('.header-wrap').mouseover(function() {$(this).removeClass('on');})
-				//$('.header-wrap').mouseout(function() {$(this).addClass('on');})
 			}
 		})
 		
